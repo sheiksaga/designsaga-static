@@ -277,13 +277,18 @@ div {
     background: yellow;
 }
 
+.center {
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, 50%);
+}
+
 .nav {
   	display: table-cell;
 	justify-content: center;
 	vertical-align: middle;
 	text-align: center;
-	
-		    }
+				    }
 
 .nav a {
   	display: inline-block;
@@ -292,7 +297,7 @@ div {
 	text-align: center;
 	text-decoration: none;
 	padding-left: 1em;
-	}
+		}
 
 .logo {
     width: 10%;
@@ -321,6 +326,10 @@ div {
 .underline1:hover:after {
 	transform: scaleX(0.8) ;
   	transform-origin: bottom left ;
+}
+
+.font_gotham {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 .column {
