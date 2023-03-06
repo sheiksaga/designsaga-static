@@ -177,10 +177,6 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and ( min-width : 35em ){
-  /* Style adjustments for viewports that meet the condition */
-}
-
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
@@ -282,6 +278,9 @@ div {
   	left: 50%;
   	transform: translate(-50%, 50%);
 }
+
+#myoutercontainer { position:relative }
+#myinnercontainer { position:absolute; top:50%; height:10em; margin-top:-5em }
 
 .nav {
   	display: table-cell;
@@ -422,16 +421,25 @@ div {
 	margin-top: -10px;
 }
 
+.padding_50 {
+	padding: 0px 150px 0px 150px;
+}
+
  @media screen and (max-width: 35em) {
       .boxed {
-         width: 100%;
+         width: 100% !important;
          overflow: hidden;
              }
 	 
 	 .boxed1 {
-         width: 100%;
+         width: 100% !important;
          overflow: hidden;
              }
+	 
+	 .padding_50{
+		 padding-left: 0px;
+		 padding-right: 0px;
+	 }
 	 
 	 .logo {
 		 width: 15%;
@@ -441,4 +449,42 @@ div {
 	 .underline1 {
 		 font-size: 1.1em;
 	 }
+	 
+	 p {
+		font-size: 0.8em !important;
+	}
+	
+	li {
+		font-size: 0.72em !important;
+	}
+	 
+	 .smallimg {
+		 padding-left: 50px;
+		 padding-right: 50px;
+	 }
+	 .smalltitle{
+		 font-size: 1em !important;
+	 }
+	 
    }
+
+@media screen and (max-width: 1200px) {
+	.boxed1 {
+         width: 80vw;
+         overflow: hidden;
+             }
+	.boxed {
+         width: 80vw;
+         overflow: hidden;
+             }
+	p {
+		font-size: 0.9em;
+	}
+	
+	li {
+		font-size: 0.8em;
+	}
+	.smalltitle {
+		font-size: 22px;
+	}
+}
